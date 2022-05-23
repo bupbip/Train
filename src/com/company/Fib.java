@@ -16,22 +16,14 @@ public class Fib {
         int currFib = 1;
         int prevFib = 0;
         int result = 0;
-        for (int i = 2; currFib < num; i++) {
-            if(i==1){
-                prevFib = 1;
-            } else {
-                int tmp = currFib;
-                currFib += prevFib;
-                prevFib = tmp;
-            }
-            result = i;
+        String fibStr = "1";
+        for (int i = 0; i < 10; i++) {
+            int tmp = currFib;
+            currFib += prevFib;
+            prevFib = tmp;
+            fibStr += currFib;
         }
-        if(currFib == num){
-            out.println(1);
-            out.print(result);
-        } else {
-            out.println(0);
-        }
+        System.out.print(fibStr.charAt(num-1));
     }
 
     public static void main(String[] args) {

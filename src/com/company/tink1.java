@@ -3,22 +3,21 @@ package com.company;
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class tink1 {
 
     void run() {
-        Locale.setDefault(Locale.US); // точка вместо запятой
         try (Scanner in = new Scanner(System.in); PrintWriter out = new PrintWriter(System.out);) {
             solve(in, out);
         }
     }
 
     void solve(Scanner in, PrintWriter out) {
-        String a = "bad_Style";
-        out.print(a.equals(a.toUpperCase()));
+        int a = in.nextInt();
+        int b = in.nextInt();
+        out.println(a+b);
     }
 
-
     public static void main(String[] args) {
-        new Main().run();
+        new tink1().run();
     }
 }

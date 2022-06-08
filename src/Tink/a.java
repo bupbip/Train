@@ -11,15 +11,15 @@ public class a {
         int amountRequired;
         int begin = 0;
         int end;
-
-        System.out.println("Введите количество номиналов: ");
+        // РєРѕРґРёСЂРѕРІРєР° 1251 :)
+        System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г­Г®Г¬ГЁГ­Г Г«Г®Гў: ");
         numberOfDenominations = scanner.nextInt();
         denominationsOfBanknotes = new int[numberOfDenominations];
         for (int i = 0; i < numberOfDenominations; i++) {
-            System.out.print((i+1) + " номинал = ");
+            System.out.print((i+1) + " Г­Г®Г¬ГЁГ­Г Г« = ");
             denominationsOfBanknotes[i] = scanner.nextInt();
         }
-        System.out.println("Введите требуемую сумму: ");
+        System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГІГ°ГҐГЎГіГҐГ¬ГіГѕ Г±ГіГ¬Г¬Гі: ");
         amountRequired = scanner.nextInt();
 
         end = numberOfDenominations - 1;
@@ -35,9 +35,9 @@ public class a {
         }
 
         if (amountRequired != 0) {
-            System.out.println("Нельзя набрать купюр на эту сумму");
+            System.out.println("ГЌГҐГ«ГјГ§Гї Г­Г ГЎГ°Г ГІГј ГЄГіГЇГѕГ° Г­Г  ГЅГІГі Г±ГіГ¬Г¬Гі");
         } else {
-            System.out.println("Результат\n" + result);
+            System.out.println("ГђГҐГ§ГіГ«ГјГІГ ГІ\n" + result);
         }
     }
 
